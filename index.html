@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Javascript Test</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+<style type="text/css">
+</style>
+<link href="CSS/Main.css" rel="stylesheet" type="text/css">
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js?ver=3.9.2'></script>
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="formHolder">
+  	<div>
+ 	<form>
+    	<label for="term" name="listTerm">Term</label>
+    		<input type="text" id="termInput" name="termText">
+    		<label for="type">Type</label>
+    		<select id="type" name="type">
+      		<option value="positive" id="pos">Positive</option>
+      		<option value="negative" id="neg">Negative</option>
+    		</select>
+    	<input type="button" onclick="termList()" value="Add Item">
+  </form>
+</div>
+</div>
+  <div id="PositiveBox">Positive<ul id="posList"></ul></div>
+  <div id="NegativeBox">Negative<ul id="negList"></ul></div>
+</div>
+<script src="Scripts/Main.js"></script>
+</body>
+</html>
